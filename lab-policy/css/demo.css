@@ -298,12 +298,10 @@ a:focus {
 .content__bottom {
 	display: flex;
 	position: fixed;
-	
 	top: 25vh;
 	align-items: center;
 	width: 100%;
 	padding: 0 3em 0 3em;
-	
 	
 }
 
@@ -389,6 +387,7 @@ a:focus {
 	}
 	.content__bottom {
 		font-size: 0.85em;
+		bottom: 5vh;
 	}
 	.menu {
 		font-size: 1em;
