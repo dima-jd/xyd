@@ -297,9 +297,13 @@ a:focus {
 }
 .content__bottom {
 	display: flex;
+	padding: 0 3em 0 3em;
+	position: fixed;
+	top: 25vh;
 	align-items: center;
 	width: 100%;
 	margin: auto 0 0 0;
+	
 }
 
 .switch {
