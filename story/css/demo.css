@@ -65,50 +65,54 @@ a:focus {
 }
 
 /* Page Loader */
-.js .loading::before {
-	content: '';
+.js .loading {
 	position: fixed;
-	z-index: 10000;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #ccd8e4;
-	background: var(--body-bg);
+	background: #232323;
+	transition: opacity 0.3s;
+}
+
+.js .loading--hide {
+	pointer-events: none;
+	opacity: 0;
 }
 
 .js .loading::after {
-	content: '';
-	position: fixed;
-	z-index: 10000;
-	top: 50%;
-	left: 50%;
-	width: 80px;
-	height: 80px;
-	margin: -40px 0 0 -40px;
-	pointer-events: none;
-	background: #333;
-	background: var(--body-text);
-	transform-origin: 0% 50%;
-	animation: loaderAnim 1.5s linear infinite alternate forwards;
+	content: '- - -';
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1.5em;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	animation: animLoader 1s infinite alternate forwards;
 }
 
-@keyframes loaderAnim {
+
+
+@keyframes animLoader {
 	0% {
-		transform: scale3d(0,1,1);
-		transform-origin: 0% 50%;
+		content: '- - -';
+	}
+	25% {
+		content: 'х - -';
 	}
 	50% {
-		transform: scale3d(1,1,1);
-		transform-origin: 0% 50%;
+		content: '- - д';
 	}
-	51% {
-		transform: scale3d(1,1,1);
-		transform-origin: 100% 50%;
+	75% {
+		content: '- / -';
 	}
 	100% {
-		transform: scale3d(0,1,1);
-		transform-origin: 100% 50%;
+		content: 'д - х';
 	}
 }
 
