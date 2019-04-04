@@ -345,6 +345,7 @@ a:hover {
   padding-right: 5em;
   float:right;
   line-height:100px;
+  margin-top: 1vh;
   z-index: 9999;
 }
 
@@ -702,7 +703,7 @@ background: url(../img/icons/responsive.png) no-repeat center center;
 
 .portfolio .portfolio-margin h1{
   font-size:34px;
-  color:#3e3e3e;
+  color:var(--color-text);
   text-align:center;
   margin-top:120px;
   letter-spacing:6px;
