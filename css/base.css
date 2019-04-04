@@ -24,7 +24,7 @@ body {
 /* Color schemes */
 
 .base {
-	--color-text: #100f0f;
+	--color-text: #FAEC28;
   --color-text-alt: #c0c0c0;
 	--color-bg: #29382D;
 	--color-link: #B465A8;
@@ -271,7 +271,7 @@ a:hover {
   margin-left: -10px;
   width: 21px;
   height: 29px;
-  background: url(../img/arrow-down.png) no-repeat center center;
+  background: url(../img/arrow-left.svg) no-repeat center center;
   display: block;
   -webkit-animation: bounce-fade 1.2s infinite; /* Safari 4+ */
   -moz-animation:    bounce-fade 1.2s infinite; /* Fx 5+ */

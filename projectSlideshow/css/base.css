@@ -14,10 +14,10 @@ html {
 }
 
 body {
-	--color-text: #100f0f;
+	--color-text: #FAEC28;
 	--color-text-alt: #c0c0c0;
 	--color-bg: #29382D;
-	--color-link: #000;
+	--color-link: #FAEC28;
 	--color-link-hover: #000;
 	--color-slide-title: #fff;
 	--color-slide-text: #fff;
