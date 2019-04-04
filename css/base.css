@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	font-family: 'Barlow Semi Condensed',-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-family: dinosaur, 'Barlow Semi Condensed',-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
@@ -24,38 +24,96 @@ body {
 /* Color schemes */
 
 .base {
-	--color-text: #FAEC28;
+	--color-text: #100f0f;
+  --color-text-alt: #c0c0c0;
 	--color-bg: #29382D;
-	--color-link: #D0EDF2;
-	--color-link-hover: #142859;
+	--color-link: #B465A8;
+	--color-link-hover: #000;
 	--color-info: #B465A8;
+  --color-slide-title: #fff;
+  --color-slide-text: #fff;
+  --color-arrow: #000;
+  --color-arrow-hover: #555;
+  --color-content: #fff;
 }
+
+/*Cursor */
+.cursor__inner {
+  z-index: 9999;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+}
+
+.cursor__inner--dot {
+  width: 6px;
+  height: 6px;
+  background: #fff;
+}
+
+.cursor__inner--circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+}
+
 
 /* Page Loader */
-.preloader{
-  position:fixed;
-  width:100%;
-  height:100%;
-  background:white;
-  z-index:99999;
-}
- 
-.preloader .item{
-  position:absolute;
-  width:100px;
-  height:100px;
-  left:50%;
-  top:50%;
-  margin-left:-50px;
-  margin-top:-50px;
-} 
 
-@keyframes loaderAnim {
-	to {
-		opacity: 1;
-		transform: scale3d(0.5,0.5,1);
-	}
+.js .loading {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #232323;
+  transition: opacity 0.3s;
 }
+
+.js .loading--hide {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.js .loading::after {
+  content: '- - -';
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.5em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: animLoader 1s infinite alternate forwards;
+}
+
+
+
+@keyframes animLoader {
+  0% {
+    content: '- - -';
+  }
+  25% {
+    content: 'х - -';
+  }
+  50% {
+    content: '- - д';
+  }
+  75% {
+    content: '- / -';
+  }
+  100% {
+    content: 'д - х';
+  }
+}
+
 
 a {
 	text-decoration: none;
@@ -106,6 +164,7 @@ a:hover {
 	height: 1.5em;
 	margin: 0 auto;
 	fill: currentColor;
+  pointer-events: none;
 }
 
 .icon--keyboard {
