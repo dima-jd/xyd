@@ -30,11 +30,11 @@ body {
 	--color-link: #B465A8;
 	--color-link-hover: #000;
 	--color-info: #B465A8;
-  --color-slide-title: #fff;
+  --color-slide-title: #FAEC28;
   --color-slide-text: #fff;
-  --color-arrow: #000;
+  --color-arrow: #FAEC28;
   --color-arrow-hover: #555;
-  --color-content: #fff;
+  --color-content: #29382D;
 }
 
 /*Cursor */
@@ -394,7 +394,7 @@ a:hover {
 }
 
 .menu-content .logo {
-   color:#333;
+   color:#2c2c2c;
    font-weight:700;
    font-size:15px;
    width:300px;
@@ -1049,7 +1049,7 @@ background: url(../img/icons/responsive.png) no-repeat center center;
 .slideshow .slide__text-description {
   max-width: 280px;
   line-height: 1.4;
-  color: var(--color-slide-text);
+  color: var(--color-text);
 }
 
 .slideshow .slide__text-link {
