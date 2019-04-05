@@ -24,7 +24,7 @@ body {
 	--color-arrow: #000;
 	--color-arrow-hover: #555;
 	--color-content: #fff;
-	font-family: dinosaur, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-family: dinosaur, 'Barlow Semi Condensed',-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 	min-height: 100vh;
 	color: #57585c;
 	color: var(--color-text);
