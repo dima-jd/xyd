@@ -1055,11 +1055,7 @@ input.submit:hover{
 }
 
 @media screen and (min-width: 53em) {
-  *,
-  *::after,
-  *::before {
-    cursor: none !important;
-  }
+  
   .message {
     display: none;
   }
