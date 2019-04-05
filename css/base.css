@@ -1605,6 +1605,10 @@ input.submit:hover{
 	  display:none;
 	}
 
+  .cursor {
+    visibility: hidden;
+  }
+
 	.menu-media {
 	display: flex;
  	justify-content: space-around;
