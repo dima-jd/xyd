@@ -96,7 +96,6 @@ $(".preloader").delay(1000).fadeOut("slow")
 
 });
 
-const shuffleArray = arr => arr.sort(() => Math.random() - 0.5);
 
 const lineEq = (y2, y1, x2, x1, currentVal) => {
         // y = mx + b 
