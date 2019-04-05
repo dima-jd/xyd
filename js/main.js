@@ -104,7 +104,7 @@ const lineEq = (y2, y1, x2, x1, currentVal) => {
         return m * currentVal + b;
     };
 
-const body = document.body;
+
 
 const lerp = (a,b,n) => (1 - n) * a + n * b;
     
