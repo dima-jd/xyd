@@ -67,12 +67,12 @@ a:focus {
 /* Page Loader */
 .js .loading {
 	position: fixed;
-	z-index: 9;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #292929;
+	background: #232323;
 	transition: opacity 0.3s;
 }
 
