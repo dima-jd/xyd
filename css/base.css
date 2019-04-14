@@ -437,6 +437,45 @@ margin-top: 0;
 .menu-content li a:hover{
   color:#ada074;
 }
+/* With us */
+
+.with-us{
+  position:relative;
+  width:100%;
+  background-image: url(../img/11.jpg);
+  z-index:333;
+}
+
+.witht-us .content{
+  position:relative;
+  width:900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.with-us p.title{
+  color: #D0EDF2;
+  margin:40px auto;
+  width:300px;
+  line-height:26px;
+  letter-spacing:0;
+  font-size:7em;
+  font-weight:300;
+  text-align:center;
+}
+
+.with-us p{
+  text-align:center;
+  font-size:4em;
+  width:250px;
+  margin:30px auto;
+  color:#333333;
+  line-height:26px;
+  letter-spacing:0;
+  position:relative;
+  font-weight:300;
+}
+
 
 /* About us */
 
