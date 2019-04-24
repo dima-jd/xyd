@@ -1228,6 +1228,17 @@ input.submit:hover{
 
 
 @media screen and (max-width: 55em) {
+
+  .js{
+    width: 100vw;
+  }
+
+ .js .loading{
+    width: 100vw;
+    position: relative;
+    top: 0;
+
+  }
 	.menu{
 	  display:none;
 	}
@@ -1403,6 +1414,6 @@ input.submit:hover{
 	}
 
 	.footer{
-	  
+	  z-index: 0;
 	}
 }

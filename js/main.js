@@ -17,9 +17,9 @@
     var target = $(this).attr("href");
             
 
-    $('html, body').stop().animate({ scrollTop: $(target).offset().top-10}, 1000, function() {
+    // $('html, body').stop().animate({ scrollTop: $(target).offset().top-10}, 1000, function() {
 
-    });
+    // });
             
     return false;
    });
