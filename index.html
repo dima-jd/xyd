@@ -15,8 +15,23 @@
 		var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
 		supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
 		</script>
-		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+		<!-- Matomo -->
+		<script type="text/javascript">
+		  var _paq = window._paq || [];
+		  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+		    var u="https://xyd713labservices.matomo.cloud/";
+		    _paq.push(['setTrackerUrl', u+'matomo.php']);
+		    _paq.push(['setSiteId', '1']);
+		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+		  })();
+		</script>
+		<!-- End Matomo Code -->
 	</head>
+
 	<body class="base loading">
 		<svg class="hidden">
 			<symbol id="icon-arrow" viewBox="0 0 24 24">
