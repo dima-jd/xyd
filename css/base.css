@@ -114,6 +114,11 @@ body {
   }
 }
 
+.img{
+  width: 100;
+  height: 100;
+}
+
 
 a {
 	text-decoration: none;
@@ -1227,7 +1232,7 @@ input.submit:hover{
 
 
 
-@media screen and (max-width: 55em) {
+@media screen and (min-width: 55em) {
 
   .js{
     width: 100vw;
@@ -1417,3 +1422,13 @@ input.submit:hover{
 	  z-index: 0;
 	}
 }
+
+@media screen and (max-width: 55em) {
+  .cursor {
+    visibility: hidden;
+  }
+  .slide__title-inner {
+    transform: none !important;
+  }
+}
+
