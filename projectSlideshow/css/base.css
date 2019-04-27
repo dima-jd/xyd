@@ -570,4 +570,19 @@ a:focus {
 	.slide__title-inner {
 		transform: none !important;
 	}
+
+	.frame__links {
+		grid-area: links;
+		text-align: center;
+		-webkit-writing-mode: vertical-rl;
+		writing-mode: vertical-rl;
+		transform: rotate(180deg);
+	}
+	.frame__links a {
+		pointer-events: auto;
+		margin: 1rem;
+	}
+	.frame__title-wrap {
+		grid-area: title;
+	}
 }
