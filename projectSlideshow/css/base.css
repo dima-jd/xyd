@@ -92,7 +92,57 @@ body {
 }
 
 
-
+@-webkit-keyframes animLoader {
+	0% {
+		-webkit-content: '- - -';
+	}
+	25% {
+		-webkit-content: 'х - -';
+	}
+	50% {
+		-webkit-content: '- - д';
+	}
+	75% {
+		-webkit-content: '- / -';
+	}
+	100% {
+		-webkit-content: 'д - х';
+	}
+}
+@-moz-keyframes animLoader {
+	0% {
+		-moz-content: '- - -';
+	}
+	25% {
+		-moz-content: 'х - -';
+	}
+	50% {
+		-moz-content: '- - д';
+	}
+	75% {
+		-moz-content: '- / -';
+	}
+	100% {
+		-moz-content: 'д - х';
+	}
+}
+@-o-keyframes animLoader {
+	0% {
+		-o-content: '- - -';
+	}
+	25% {
+		-o-content: 'х - -';
+	}
+	50% {
+		-o-content: '- - д';
+	}
+	75% {
+		-o-content: '- / -';
+	}
+	100% {
+		-o-content: 'д - х';
+	}
+}
 @keyframes animLoader {
 	0% {
 		content: '- - -';
