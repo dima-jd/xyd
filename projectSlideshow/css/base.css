@@ -449,8 +449,7 @@ a:focus {
 							'... ...';
 	}
 	.frame__links {
-		position: fixed;
-		z-index: 1000;
+
 		grid-area: links;
 		text-align: center;
 		-webkit-writing-mode: vertical-rl;
@@ -579,6 +578,8 @@ a:focus {
 	}
 
 	.frame__links {
+		position: fixed;
+		z-index: 1000;
 		grid-area: links;
 		text-align: center;
 		-webkit-writing-mode: vertical-rl;
