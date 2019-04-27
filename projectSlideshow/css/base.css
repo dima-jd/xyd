@@ -579,7 +579,7 @@ a:focus {
 
 	.frame__links {
 		position: fixed;
-		top:15vw;
+		top: 24vw;
 		right: 2vw;
 		z-index: 1000;
 		grid-area: links;
