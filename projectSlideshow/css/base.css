@@ -155,6 +155,7 @@ a:focus {
 }
 
 .frame {
+	z-index: 19;
 	padding: 1rem;
 }
 
