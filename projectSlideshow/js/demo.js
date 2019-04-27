@@ -524,12 +524,12 @@
     const nav = new Navigation(document.querySelector('.nav'));
     slideshow.nav = nav;
 
-    // // Custom cursor chnages state when hovering on elements with 'data-hover'.
-    // [...document.querySelectorAll('[data-hover]')].forEach((link) => {
-    //     link.addEventListener('mouseenter', () => cursor.enter() );
-    //     link.addEventListener('mouseleave', () => cursor.leave() );
-    //     link.addEventListener('click', () => cursor.click() );
-    // });
+    // Custom cursor chnages state when hovering on elements with 'data-hover'.
+    [...document.querySelectorAll('[data-hover]')].forEach((link) => {
+        link.addEventListener('mouseenter', () => cursor.enter() );
+        link.addEventListener('mouseleave', () => cursor.leave() );
+        link.addEventListener('click', () => cursor.click() );
+    });
 
     // Preload all the images in the page.
     imagesLoaded(document.querySelectorAll('.slide__figure-img'), {background: true}, () => body.classList.remove('loading'));
