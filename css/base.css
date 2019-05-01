@@ -7,8 +7,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 }
 
 html {
-/*	background: #3e3e3e;*/
-width: 100vw;
+  background: rgb(230 162 82);
+  height: 100%;
 }
 
 body {
