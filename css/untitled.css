@@ -993,7 +993,7 @@ a:hover {
 		z-index: 9;
 	}
 	.frame {
-	z-index: 39;
+	z-index: 99;
 	padding: 1rem;
 }
 
