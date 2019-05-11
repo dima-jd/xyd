@@ -892,6 +892,7 @@ a:hover {
 		position: relative;
 	}
 	.slide {
+		background: var(--color-bg);
 		padding: 0;
 		--gridgap: 0px;
 		--gridwidth: 100%;
