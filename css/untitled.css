@@ -577,6 +577,14 @@ a:hover {
 
 
 /* Frame */
+.base{
+	z-index: 9; 
+  position:relative;
+  height: 100%;
+  
+  width:100%;
+  background:#292929;
+}
 
 .frame {
 	z-index: 1000;
@@ -998,6 +1006,11 @@ a:hover {
 }
 
 @media screen and (max-width: 53em) {
+
+	html {
+  background: #292929;
+  height: 100%;
+}
 
 	.js .loading{
 		display: none;	
