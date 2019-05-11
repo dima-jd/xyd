@@ -178,6 +178,16 @@ a:focus {
 	outline: none;
 }
 
+::selection {
+  background: var(--color-link);
+  color:white;
+}
+
+::-moz-selection {
+  background: var(--color-link);
+  color:white;
+}
+
 .hidden {
 	position: absolute;
 	overflow: hidden;
