@@ -989,7 +989,7 @@ a:hover {
 
 @media screen and (max-width: 53em) {
 
-	.loading{
+	.js .loading{
 		z-index: 9;
 	}
 	.frame {
