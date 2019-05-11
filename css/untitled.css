@@ -671,7 +671,7 @@ a:hover {
 	position: relative;
 }
 
-.slideshow .slide {
+.slide {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -686,27 +686,27 @@ a:hover {
 	padding: 1rem;
 }
 
-.slideshow .slide--current {
+.slide--current {
 	pointer-events: auto;
 	z-index: 1000;
 	opacity: 1;
 }
 
-.slideshow .slide .slide__figure {
+.slide__figure {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
 
-.slideshow .slide .slide__figure .slide__figure-inner {
+.slide__figure .slide__figure-inner {
 	width: 100%;
 	height: 100%;
 	position: relative;
 	overflow: hidden;
 }
 
-.slideshow .slide .slide__figure .slide__figure-img {
+.slide__figure .slide__figure-img {
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -717,7 +717,7 @@ a:hover {
 	background-size: cover;
 }
 
-.slideshow .slide .slide__figure--main .slide__figure-img {
+.slide__figure--main .slide__figure-img {
 	width: calc(100% + 40px);
 	height: calc(100% + 40px);	
 	top: -20px;
@@ -727,20 +727,20 @@ a:hover {
 	will-change: transform;
 }
 
-.slideshow .slide .slide__figure--main .slide__figure-img:nth-child(1) {
+.slide__figure--main .slide__figure-img:nth-child(1) {
 	filter: hue-rotate(90deg);
 	opacity: 1;
 }
 
-.slideshow .slide--open .slide__figure--main {
+.slide--open .slide__figure--main {
 	grid-area: 1 / 1 / span 2 / span 2;
 }
 
-.slideshow .slide--open .slide__figure-img {
+.slide--open .slide__figure-img {
 	background-position: 50% 0%;
 }
 
-.slideshow .slide .slide__title {
+.slide__title {
 	position: relative;
 	z-index: 1000;
 	font-weight: 800;
@@ -759,7 +759,7 @@ a:hover {
     pointer-events: none;
 }
 
-.slideshow .slide .slide__title .slide__title-inner:not(:last-child) {
+.slide__title .slide__title-inner:not(:last-child) {
 	-webkit-text-stroke: 1px var(--color-slide-title);
     text-stroke: 1px var(--color-slide-title);
     -webkit-text-fill-color: transparent;
@@ -768,40 +768,40 @@ a:hover {
 	opacity: 0.7;
 }
 
-.slideshow .slide .slide__title .slide__title-inner {
+.slide__title .slide__title-inner {
 	position: absolute;
 	will-change: transform;
 }
 
-.slideshow .slide .slide__title .slide__title-inner > span {
+.slide__title .slide__title-inner > span {
 	white-space: pre;
 	display: inline-block;
 	transform: translate3d(0,0,0);
 }
 
-.slideshow .slide .slide__text {
+.slide__text {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	grid-column-end: span 2;
 }
 
-.slideshow .slide .slide__text .slide__text-meta {
+.slide__text .slide__text-meta {
 	margin: 0;
 }
 
-.slideshow .slide .slide__text .slide__text-description {
+.slide__text .slide__text-description {
 	max-width: 280px;
 	line-height: 1.4;
 	color: var(--color-slide-text);
 }
 
-.slideshow .slide .slide__text .slide__text-link {
+.slide__text .slide__text-link {
 	position: relative;
 	font-size: 1.25rem;
 }
 
-.slideshow .slide .slide__text .slide__text-link::before {
+.slide__text .slide__text-link::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -810,15 +810,15 @@ a:hover {
 	height: 100%;
 }
 
-.slideshow .slide:not(.slide--open) .slide__content,
-.slideshow .slide:not(.slide--open) .slide__back {
+.slide:not(.slide--open) .slide__content,
+.slide:not(.slide--open) .slide__back {
 	position: absolute;
 	height: 0;
 	overflow: hidden;
 	pointer-events: none;
 }
 
-.slideshow .slide .slide__content {
+.slide .slide__content {
 	opacity: 0;
 	font-size: 1.25rem;
 	text-align: justify;
@@ -827,7 +827,7 @@ a:hover {
 	color: var(--color-content);
 }
 
-.slideshow .slide .slide__back {
+.slide .slide__back {
 	opacity: 0;
 	background: none;
 	border: 0;
@@ -842,8 +842,8 @@ a:hover {
 	color: var(--color-content);
 }
 
-.slideshow .slide--open .slide__text,
-.slideshow .slide--open .slide__figure--box  {
+.slide--open .slide__text,
+.slide--open .slide__figure--box  {
 	position: absolute;
 }
 
@@ -988,7 +988,7 @@ a:hover {
 	}
 }
 
-/*@media screen and (max-width: 53em) {
+@media screen and (max-width: 53em) {
 
 	.js .loading{
 		display: none;	
@@ -1261,5 +1261,5 @@ a:hover {
 			transform: none !important;
 		}
 }
-*/
+
 
