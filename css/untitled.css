@@ -753,6 +753,8 @@ a:hover {
 	letter-spacing: -0.25vw;
 	color: var(--color-slide-title);
 	-webkit-text-stroke: 1px var(--color-slide-title);
+	-moz-text-stroke: 1px var(--color-slide-title);
+	-o-text-stroke: 1px var(--color-slide-title);
     text-stroke: 1px var(--color-slide-title);
     grid-column-end: span 2;
     height: 10vw;
@@ -761,8 +763,12 @@ a:hover {
 
 .slide__title .slide__title-inner:not(:last-child) {
 	-webkit-text-stroke: 1px var(--color-slide-title);
+	-moz-text-stroke: 1px var(--color-slide-title);
+	-o-text-stroke: 1px var(--color-slide-title);
     text-stroke: 1px var(--color-slide-title);
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
     text-fill-color: transparent;
 	color: transparent;
 	opacity: 0.7;
@@ -875,6 +881,9 @@ a:hover {
 		grid-area: links;
 		text-align: center;
 		-webkit-writing-mode: vertical-rl;
+		-moz-writing-mode: vertical-rl;
+		-o-writing-mode: vertical-rl;
+		writing-mode: vertical-rl;
 		writing-mode: vertical-rl;
 		transform: rotate(180deg);
 	}
@@ -1164,6 +1173,8 @@ a:hover {
 		letter-spacing: -0.25vw;
 		color: var(--color-slide-title);
 		-webkit-text-stroke: 1px var(--color-slide-title);
+		-moz-text-stroke: 1px var(--color-slide-title);
+		-o-text-stroke: 1px var(--color-slide-title);
 	    text-stroke: 1px var(--color-slide-title);
 	    grid-column-end: span 2;
 	    height: 10vw;
@@ -1172,8 +1183,12 @@ a:hover {
 
 	.slide__title-inner:not(:last-child) {
 		-webkit-text-stroke: 1px var(--color-slide-title);
+		-moz-text-stroke: 1px var(--color-slide-title);
+		-o-text-stroke: 1px var(--color-slide-title);
 	    text-stroke: 1px var(--color-slide-title);
 	    -webkit-text-fill-color: transparent;
+	    -moz-text-fill-color: transparent;
+	    -o-text-fill-color: transparent;
 	    text-fill-color: transparent;
 		color: transparent;
 		opacity: 0.7;
