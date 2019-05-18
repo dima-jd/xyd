@@ -584,7 +584,7 @@ a:hover {
 }
 
 
-@media screen and (min-width: 55em) {
+@media only screen and (min-width: 53em) {
 	.start-page{
 	background-position: center center;}
 	}
@@ -727,7 +727,7 @@ a:hover {
 }
 
 
-@media screen and (max-width: 53em) {
+@media only screen and (max-width: 53em) {
 
 	.start-page{
 	background-position: center center;}
