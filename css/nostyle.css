@@ -861,7 +861,7 @@ a:hover {
 	.dropbtn{
 		border: none;
   		outline: none;
-  		color: var(--color-link);
+  		color: var(--color-text);
   		background-color: inherit;
   		font-family: inherit;
  		margin: 0;
