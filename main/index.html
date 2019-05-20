@@ -50,7 +50,17 @@
 			<a href="../" title="Дownload template examples" data-hover>template.zip</a>
 			<a href="../" title="Find our products on Big Cartel" data-hover>журнал</a>
 			</div>
-			<div class="index" data-hover>индекс</div>
+			<div class="index" data-hover>
+				<button class="dropbtn" onclick="myFunction()">индекс</button>
+				<div class="dropdown-content" id="myDropdown">
+    				<a href="#">MyXYД</a>
+    				<a href="#">Загрузить свой проект</a>
+    				<a href="#">Какие краски мне выбрать?</a>
+    				<a href="#">Сроки и условия</a>
+    				<a href="#">Поддержка</a>
+    				<a href="#">ХуД помощь</a>
+ 				</div>
+			</div>
 		</div>
 
 		<!--/slideshow-->
@@ -154,12 +164,28 @@
 					</div>
 				</div>
 		</div>
-		<!-- <div class="loading"></div> -->
 	</main>
 	<div class="cursor">
 		<div class="cursor__inner cursor__inner--circle"></div>
 		<div class="cursor__inner cursor__inner--dot"></div>
 	</div>
+	<script>
+	/* When the user clicks on the button, 
+	toggle between hiding and showing the dropdown content */
+	function myFunction() {
+	  document.getElementById("myDropdown").classList.toggle("show");
+	}
+	
+	// Close the dropdown if the user clicks outside of it
+	window.onclick = function(e) {
+	  if (!e.target.matches('.dropbtn')) {
+	  var myDropdown = document.getElementById("myDropdown");
+	    if (myDropdown.classList.contains('show')) {
+	 	     myDropdown.classList.remove('show');
+	 	   }
+	  }
+	}
+	</script>
 	<script src="../js/imagesloaded.pkgd.min.js"></script>
 	<script src="../js/charming.min.js"></script>
 	<script src="../js/TweenMax.min.js"></script>
