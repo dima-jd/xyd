@@ -587,7 +587,6 @@ a:hover {
 @media only screen and (min-width: 53em) {
 	.start-page{
 	background-position: center center;}
-	}
 
 	.frame {
 		position: fixed;
@@ -609,7 +608,6 @@ a:hover {
 							'... ...';
 	}
 	.frame__links {
-
 		grid-area: links;
 		text-align: center;
 		-webkit-writing-mode: vertical-rl;
@@ -623,6 +621,50 @@ a:hover {
 	.frame__title-wrap {
 		grid-area: title;
 	}
+	.index {
+		grid-area: index;
+		text-align: right;
+		pointer-events: auto;
+		justify-self: end;
+	}
+	.dropbtn{
+		border: none;
+  		outline: none;
+  		color: var(--color-link);
+  		background-color: inherit;
+  		font-family: inherit;
+ 		margin: 0;
+	}
+	.index:hover .dropbtn, .dropbtn:focus {
+  		background-color: inherit;
+	}
+
+	.dropdown-content {
+		display: none;
+  		grid-area: index;
+		text-align: right;
+		pointer-events: auto;
+		justify-self: end;
+		z-index: 1;
+		position: absolute;
+		right: 0;
+	}
+
+	.dropdown-content a {
+  	float: none;
+  	color: var(--color-text);
+  	text-decoration: none;
+  	display: block;
+  	text-align: right;
+	}
+
+	.dropdown-content a:hover {
+  		background-color: var(--color-link);
+	}
+
+	.show {
+	  	display: block;
+	}	
 	.slideshow {
 		width: 100vw;
 		height: 100vh;
@@ -718,52 +760,6 @@ a:hover {
 	.slide__text--right .slide__text-description {
 		align-self: flex-end;
 	}
-	.index {
-		grid-area: index;
-		text-align: right;
-		pointer-events: auto;
-		justify-self: end;
-	}
-	.dropbtn{
-		border: none;
-  		outline: none;
-  		color: var(--color-link);
-  		background-color: inherit;
-  		font-family: inherit;
- 		margin: 0;
-	}
-	.index:hover .dropbtn, .dropbtn:focus {
-  		background-color: inherit;
-	}
-
-	.dropdown-content {
-		display: none;
-  		grid-area: index;
-		text-align: right;
-		pointer-events: auto;
-		justify-self: end;
-		z-index: 1;
-		position: absolute;
-		right: 0;
-	}
-
-	.dropdown-content a {
-  	float: none;
-  	color: var(--color-text);
-  	text-decoration: none;
-  	display: block;
-  	text-align: right;
-	}
-
-	.dropdown-content a:hover {
-  		background-color: var(--color-link);
-	}
-
-	.show {
-	  	display: block;
-	  
-	}	
-
 }
 
 
@@ -855,6 +851,52 @@ a:hover {
 	width: 1.5rem;
 	text-align: center;
 	}
+
+	.index {
+		grid-area: index;
+		text-align: right;
+		pointer-events: auto;
+		justify-self: end;
+	}
+	.dropbtn{
+		border: none;
+  		outline: none;
+  		color: var(--color-link);
+  		background-color: inherit;
+  		font-family: inherit;
+ 		margin: 0;
+	}
+	.index:hover .dropbtn, .dropbtn:focus {
+  		background-color: inherit;
+	}
+
+	.dropdown-content {
+		display: none;
+  		grid-area: index;
+		text-align: right;
+		pointer-events: auto;
+		justify-self: end;
+		z-index: 1;
+		position: absolute;
+		right: 0;
+	}
+
+	.dropdown-content a {
+  	float: none;
+  	color: var(--color-text);
+  	text-decoration: none;
+  	display: block;
+  	text-align: right;
+	}
+
+	.dropdown-content a:hover {
+  		background-color: var(--color-link);
+	}
+
+	.show {
+	  	display: -webkit-box;
+	  
+	}	
 
 	.slideshow {
 	width: 100%;
