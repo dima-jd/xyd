@@ -493,6 +493,9 @@ class Slideshow {
         }
 };
 
+
+ 
+
 // The navigation control.
     class Navigation {
         constructor(el) {
@@ -547,7 +550,7 @@ slideshow.nav = nav;
     });
 
 // Preload all the images in the page.
-    imagesLoaded(document.querySelectorAll('.slide__figure-img'), {background: true}, () => body.classList.remove('loading'));
+    imagesLoaded(document.querySelectorAll('.xyd'), {background: true}, () => body.classList.remove('loading'));
 
 
 
