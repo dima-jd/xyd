@@ -606,6 +606,62 @@ a:hover {
 	  		background-color: inherit;
 	  		font-family: inherit;
 	  		}
+
+	.menu-slide3{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	text-align: center;
+	font-size: 10vh;
+	font-weight: normal;
+	}
+
+	.distort {
+	position: absolute;
+	pointer-events: none;
+	will-change: transform;
+	}
+
+	.distort__img {
+		opacity: 0;
+	}
+
+	.menu__link,
+	.quote__link {
+	z-index: 999;
+	color: var(--color-content-link);
+	position: relative;
+	white-space: nowrap;
+	}
+
+	.menu__link:hover,
+	.quote__link:hover {
+	color: var(--color-content-link-hover);
+	}
+
+	.menu__link span,
+	.quote__link span {
+	display: inline-block;
+	}
+
+	.quote__link::after {
+	content: '';
+	position: absolute;
+	height: 5px;
+	border-width: 1px 0;
+	border-style: solid;
+	width: 100%;
+	left: 0;
+	top: calc(100% - 0.25rem);
+	border-color: currentColor;
+	}
+
+	.content{
+		.content {
+		height: 100vh;
+		justify-content: center;
+	}
+	}
 /* ____________________________________ */
 /* ____________________________________ */
 /* ____________________________________ */	  	
