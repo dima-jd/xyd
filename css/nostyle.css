@@ -1012,6 +1012,13 @@ a:hover {
 /* Start page */
 	.start-page{
 	background-position: center center;}
+
+	.start-page .content .text .logo{
+		margin-bottom: 0;
+	}
+	.start-page .content .text h1{
+		margin-top: 2em;
+	}
 	
 /* ____________________________________ */
 
