@@ -549,8 +549,8 @@ slideshow.nav = nav;
         link.addEventListener('click', () => cursor.click() );
     });
 
-// Preload all the images in the page.
-    imagesLoaded(document.querySelectorAll('.xyd'), {background: true}, () => body.classList.remove('loading'));
+// // Preload all the images in the page.
+    imagesLoaded(document.querySelectorAll('.slide__figure-img'), {background: true}, () => body.classList.remove('loading'));
 
 
 
