@@ -1027,7 +1027,7 @@ a:hover {
 
 	
 /** Main Page **/
-	.frame {
+	/*.frame {
 	z-index: 19000;
 	padding: 1rem;
 	}
@@ -1110,7 +1110,7 @@ a:hover {
 	width: 1.5rem;
 	text-align: center;
 	}
-
+*/
 	.index {
 		margin: 0;
 	}
@@ -1144,7 +1144,7 @@ a:hover {
   		background-color: var(--color-text);
 	}
 
-	.show {
+	/*.show {
 	  	display: grid;
 	}	
 
@@ -1308,7 +1308,15 @@ a:hover {
 	.slide--open .slide__text,
 	.slide--open .slide__figure--box  {
 	position: absolute;
-	}
+	}*/
+
+	.cursor {
+        visibility: hidden;
+    }
+
+    .slide__title-inner {
+        transform: none !important;
+    }
 /* ____________________________________ */
 
 /** Inner Page **/
