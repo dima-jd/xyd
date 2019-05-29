@@ -1149,13 +1149,13 @@ a:hover {
 	  	display: grid;
 	}	
 
-	/*.cursor {
+	.cursor {
         visibility: hidden;
     }
 
     .slide__title-inner {
         transform: none !important;
-    }*/
+    }
 /* ____________________________________ 
 
 /** Inner Page **/
