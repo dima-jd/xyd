@@ -1161,8 +1161,10 @@ a:hover {
 
 /** Inner Page **/
 /* ____________________________________ */
-
-.content__top {
+	.xyd{
+		width: 100vw;
+	}
+	.content__top {
 
 		font-size: 0.5em;
 		position: fixed;
