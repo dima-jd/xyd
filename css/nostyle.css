@@ -1154,19 +1154,21 @@ a:hover {
         visibility: hidden;
     }
 
-    .slide__figure--main .slide__figure--inner .slide__figure-img{
+    .slide__figure {
     	transform: none !important;
     }
 
-    .slide__figure--main .slide__figure-img:nth-child(1){
+    .slide__figure--main {
+    	transform: none !important;
+    }
+     .slide__figure-inner {
+    	transform: none !important;
+    }
+    .slide__figure-img {
     	transform: none !important;
     }
 
-    .slide__figure{
-    	transform: none !important;
-    }
-
-    .slide__title{
+    .slide__title {
     	transform: none !important;
     }
 
