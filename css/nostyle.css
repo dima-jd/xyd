@@ -1154,7 +1154,7 @@ a:hover {
         visibility: hidden;
     }
 
-    .slide__figure--main .slide__figure-img{
+    .slide__figure--main .slide__figure--inner .slide__figure-img{
     	transform: none !important;
     }
 
@@ -1162,7 +1162,7 @@ a:hover {
     	transform: none !important;
     }
 
-    .slide__figure-img{
+    .slide__figure{
     	transform: none !important;
     }
 
