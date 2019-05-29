@@ -1345,7 +1345,7 @@ a:hover {
 	.content__bottom{
 		width: 94%;
 		position: absolute;
-    bottom: 5vh;
+    bottom: 10vh;
     padding-left: 5vh;
     padding-right: 5vh;
 	}
