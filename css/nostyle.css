@@ -1158,6 +1158,10 @@ a:hover {
     	transform: none !important;
     }
 
+    .slide__figure--main .slide__figure-img:nth-child(1){
+    	transform: none !important;
+    }
+
     .slide__title{
     	transform: none !important;
     }
