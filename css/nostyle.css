@@ -1154,6 +1154,10 @@ a:hover {
         visibility: hidden;
     }
 
+    .slide__title{
+    	transform: none !important;
+    }
+
     .slide__title-inner {
         transform: none !important;
     }
