@@ -8,7 +8,7 @@
 		<meta name="keywords" content="трафаретная печать, шелкография, печать, печать на одежде, Урбан, тлв, квир, тель-авив, печать не умерла, ближний восток, все для птиц, визуальная коммуникация, печать на пленке, мертвое море, tbtlv, крафт, экспонирование , мастерская, смешанная техника искусства, ретро-футуризм, сюрреализм, психоделика, странное искусство, народное искусство, инсайдерское искусство, Тель-Авив фешн, белый черный, штриховой рисунок, художественные медиа, художественное выражение, художественная выставка, ремесленничество, искусство рисования, искусство, цифровая иллюстрация, худрук, белый мусор, городской дизайн, черные чернила, уличное искусство, наклейки на ноутбук, дизайн, графика, магазин инди, магазин DIY, магазин уличной моды" />
 		<meta name="author" content="dima.jd" />
 		<link rel="shortcut icon" href="favicon.ico">
-		<link rel="stylesheet" type="text/css" href="css/untitled.css" />
+		<link rel="stylesheet" type="text/css" href="css/nostyle.css" />
 		<script>
 		document.documentElement.className = "js";
 		var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
@@ -27,7 +27,7 @@
 				<path d="M88.148 30.124H6.404L33.208 3.32a1.877 1.877 0 0 0 0-2.652 1.877 1.877 0 0 0-2.652 0L.552 30.67a1.942 1.942 0 0 0-.409.612 1.86 1.86 0 0 0 0 1.432c.094.233.233.44.41.612L30.555 63.33c.367.368.847.552 1.328.552.48 0 .96-.184 1.327-.548a1.877 1.877 0 0 0 0-2.652L6.404 33.874h81.743a1.876 1.876 0 0 0 0-3.75z"/>
 			</symbol>
 		</svg>
-		<main class="container">
+		<main class="xyd">
 			<!-- section start-page -->
 			<section class="start-page" id="home">
 				<div class="opacity"></div> <!-- Opacity color -->
@@ -36,10 +36,138 @@
 			          <div class="logo"><img src="img/logo.svg" alt="logo"></div>
 			          <h1>xyд laboratory</h1>
 			          <p>мастерская шелкотрафаретной печати</p><hr/>
-			          <a href="main.html" class="read-more">запачкать руки</a>
+			          <a href="main.html" class="read-more" data-hover>запачкать руки</a>
 			        </div>
 			    </div>
 			</section>
+			
+      		<div class="contact-form">
+      			<button class="btnform" onclick="xydForm()">технические характеристики</button>
+      			<form action="connect" method="post" class="form-content" id="xyd-form">
+        	<div class="legend">Связь с ХУД</div>
+        	<div class="form-group">
+            <div class="field field-required">
+            		<label class="control-label" for="input-mainame"><br>название твоей папки</label>
+              		<input type="text" name="" value="" placeholder="Название папки" id="input-mainname" class="form-control" />
+              		<div class="text-danger hidden">что с тобой не так?</div>
+            </div> <!-- Имя -->
+            <div class="field field-required">
+                <label class="control-label" for ="return_frame-size_id"><br>x = размер рам, cm</label>
+                <div class="radio">
+                <label>
+                  <input type="radio" name="return_frame-size_id" value="{{ return_frame-size.return_frame-size_id }}" checked="checked" />
+                  4.2 < x < 41.9</label>
+               </div>
+                <div class="radio">
+                <label>
+                  <input type="radio" name="return_frame-size_id" value="{{ return_frame-size.return_frame-size_id }}"  />
+                  42.0 < x < 80.0</label>
+                </div>
+                 <div class="radio">
+                  <label>
+                  <input type="radio" name="return_frame-size_id" value="{{ return_frame-size.return_frame-size_id }}"  />
+                  81.0 < x < 173.0</label>
+                </div>
+                <div class="radio">
+                <label>
+                  <input type="radio" name="return_frame-size_id" value="{{ return_frame-size.return_frame-size_id }}"  />
+                  142.0 < x < 297.0</label>
+               </div>
+                 <div class="text-danger hidden">выбери свои рабочие характеристики</div>
+            </div> <!-- Размер Рам -->
+            <div class="field field-required">
+                <label class="control-label" for =""><br>y = хар-ки сетки,lpi</label>
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="" value="" checked="checked" />
+                  5 < y < 42</label>
+               </div>
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="" value=""  />
+                  42 < y < 80 </label>
+                </div>
+                 <div class="checkbox">
+                  <label>
+                  <input type="checkbox" name="" value=""  />
+                  89 < y < 137</label>
+                </div>
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="" value=""  />
+                  142 < y </label>
+               </div>
+                 <div class="text-danger hidden">выбери свои рабочие характеристики</div>
+            </div> <!-- Размер сетки -->
+            <div class="field field-required">
+                <label class="control-label" for =""><br>i = угол поворота сетки,°</label>
+                <div class="col-sm-10">
+                	<label class="radio-inline">
+                  <input type="radio" name="opened" value="1" checked="checked" />
+                  i = 0° <input type="radio" name="opened" value="1"  />
+                  i = 22.5° <input type="radio" name="opened" value="1"  />
+                  i = 45°<input type="radio" name="opened" value="1"  /> i = 67.5°</label>
+               </div>
+              </div>
+
+               <div class="text-danger hidden">выбери свои рабочие характеристики</div>
+            </div> <!-- Угол поворота сетки -->
+            <div class="field field-required">
+                <label class="control-label" for =""><br>Тип краски</label>
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="" value="" checked="checked" />
+                  Водная</label>
+               </div>
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="" value=""  />
+                  Пластизоль</label>
+                </div>
+                 <div class="checkbox">
+                  <label>
+                  <input type="checkbox" name="" value=""  />
+                  ПВС</label>
+                </div>
+                <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="" value=""  />
+                  УВ</label>
+               </div>
+                 <div class="text-danger hidden">выбери свои рабочие характеристики</div>
+            </div> <!-- Тип краски -->
+             
+
+            <div class="field field-required">
+              <label class="control-label" for="input-comment"><br>Дополнительная информация</label>
+              <div class="col-sm-10">
+              	<textarea name="comment" rows="1" placeholder="Комментарии и замечания набирать тут" id="input-comment" class="form-control"></textarea>
+            	</div> 
+       		</div><!-- Комментарии -->
+        	<div class="buttons clearfix">
+          			<div class="read-more"><a href="../notes/" class="btn btn-default">https://open.spotify.com/track/6GlpYFJKVtXMaoUVUvJln9</a></div>
+          			<div class="read-more" data-hover>
+           			<input type="submit" value="отправить себе на почту" class="btn btn-primary" />
+         			</div>
+       		</div>
+      			<!--  <div class="notes">
+         <label class="notes-label">FOR BEST RESULTS USE OUR GUIDELINES, PRODUCT GUIDES, COMMISSION NOTES </label>
+         <p class="note-text">- Минимальный заказ для трафаретной печати составляет восемь единиц, чтобы избежать минимальной платы за печать. Меньшие заказы могут быть напечатаны; Однако, это значительно затратней из-за настройки и подготовки оборудования</p>
+         <p class="note-text">- коллекции печатных материалов должны отвечать выраженным общественным потребностям, быть адаптивными к изменениям и сохранить соответствующую роль в обществе.</p>
+         <p class="note-text">- Подготовка печатных материалов для взрослых не будет ограничена возможностью того, что неприемлемая графика может стать достоянием молодежи</p>
+         <p class="note-text">- Для оценки дополнительного ценообразования мы определим, к какой категории относится ваш проект, основываясь на вашем описании. Мы можем увеличить или уменьшить цену по своему усмотрению. </p>
+         <p class="note-text">- Любой, кто получит подтверждение о сотрудничестве, так же получит/скачает шаблон для подготовки своего дизайна/иллюстрации. Если скинуть в телеграм artwork.png, мы сгенерируем предварительный просмотр</p>
+         <p class="note-text">- Все платежи будут сделаны через PayPal (детали будут предоставлены при вводе в эксплуатацию)</p>
+         <p class="note-text">- готовый продукт будет упакован и отправлен по почте или курьером, любые оригинальные графические файлы и файлы вариаций будут загружены в папку и предоставлены на Google Диске</p>
+         <p class="more-note">Обычный срок выполнения работ составляет 2-3 недели с момента подтверждения заказа и утверждения рабочего листа. Если ты хочешь заказать работу и забрать её "срочно", применяется 25% срочный сбор, чтобы гарантировать завершение работы к сроку. Если не уверен, подпадает ли твоя работа под обычное время на выполнения работ, отправь сообщение по электронной почте или @telexyd и мы сможем помочь отсортировать и подготовить её к желаемой дате завершения.</p>
+       			</div> -->
+				</form>
+			</div>
+      		
+       		
+
+
+
 			<!-- <div class="loading"></div> -->
 		</main>
 		<div class="cursor">
@@ -47,6 +175,17 @@
 		<div class="cursor__inner cursor__inner--dot"></div>
 	</div>
 		<!--  -->
-		<script src="js/main.js"></script>
+		<script src="js/xyd.js"></script>
+		<script>
+			function xydForm() {
+	  			document.getElementById("xyd-form").classList.toggle("show");
+				}
+				window.onclick = function(e) {
+	  			if (!e.target.matches('.btnform')) {
+	  			var myDropdown = document.getElementById("xyd-form");
+	    		}
+	  			}
+	
+		</script>
 	</body>
 </html>
