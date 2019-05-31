@@ -717,10 +717,10 @@ a:hover {
 		margin: 0 0 0.25em 0;
 	}
 
-	/*.js .menu--Print {
+	.no-js .menu--Print {
 		display: none;
 	}
-*/
+
 	.menu__link {
 		display: inline-block;
 		pointer-events: hidden;
