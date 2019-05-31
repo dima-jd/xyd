@@ -212,7 +212,7 @@
 		<div class="cursor__inner cursor__inner--dot"></div>
 
 		
-		<script src="../js/xyd.js"></script>
+		<script src="../js/main.js"></script>
 		<!-- <script src="../js/main.js"></script> -->
 		<script>
 			function xydForm() {
@@ -221,8 +221,11 @@
 				window.onclick = function(e) {
 	  			if (!e.target.matches('.btnform')) {
 	  			var myDropdown = document.getElementById("xyd-form");
+	  			if (myDropdown.classList.contains('show')) {
+	 	     	myDropdown.classList.remove('show');
 	    		}
 	  			}
+	  		}
 	
 		</script>
 		<script>
