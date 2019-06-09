@@ -1060,7 +1060,7 @@ a:hover {
 .about-us .column-two .circle-two:hover,
 .about-us .column-two .circle-five:hover,
 .about-us .column-two .circle-eight:hover{
-  border:0px solid var(--color-arrow-hover);
+  border:2px solid var(--color-arrow-hover);
 
 }
 
@@ -1121,8 +1121,10 @@ a:hover {
 	transition: all 0.2s ease-in;
 }
 
-.about-us .column-three .circle-three:hover{ 
-  border:2px solid #ada074;
+.about-us .column-three .circle-three:hover,
+.about-us .column-three .circle-six:hover,
+.about-us .column-three .circle-nine:hover{ 
+  border:2px solid var(--color-arrow-hover);
 }
 
 /* Contact */
@@ -1289,7 +1291,7 @@ input.submit{
   width:58px;
   height:58px;
   margin: 0 auto;
-  padding-top:50px;
+  padding-top:0px;
 
 }
 
@@ -1818,7 +1820,7 @@ input.submit{
 
 	.content__bottom{
 		width: 94%;
-		position: absolute;
+		position: relative;
     bottom: 2vh;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -1833,11 +1835,15 @@ input.submit{
 	display: block;
 	}
 	.menu__item:not(:last-child) {
-    margin: 7px 12px 2.25em 0px;
-    height: 14.2vh;
+    margin: 7px 12px 0.25em 0px;
+    
 	}
 	.menu__item-xyd(:last-child) {
     color: var(--color-info);
+	}
+	.menu__link span{
+		max-width: 275px;
+		font-size: 10px;
 	}
 	.contact-link{
 		padding: 1em 0 1em 5em;
@@ -1856,7 +1862,7 @@ input.submit{
 
 /*About us*/
 		.about-us h1 {
-		  margin-top:0;
+		  margin-top:2.42em;
 		}
 
 		.about-us .content{
@@ -1870,6 +1876,7 @@ input.submit{
 		.about-us .column-one, .about-us .column-two{
 		  width:300px;
 		  margin-bottom:20px;
+		  height: 540px;
 		}
 
 		 .about-us .content .column-three{
@@ -1877,7 +1884,7 @@ input.submit{
 		  margin-bottom:70px;
 		 }
 		 .contact, .contact .content, .contact .content .form{
-		  width:300px;
+		  width:94vw;
 		}
 
 		.contact .content .contact-text{
@@ -1897,15 +1904,23 @@ input.submit{
 
 		.contact .content .contact-text {
 		  width:275px;
+		      margin: 6.67em;
 		}
 
 		.contact .content .form .column, .contact .content .form .column-3{
 		  width:320px;
+		  margin: 0 3.67em;
 		}
-
+		.contact .content .form .button{
+			width: 320px;
+		}
 		.contact .content .form .column-2{
 		  width:320px;
 		  padding-left:0;
+		  margin: 0 3.67em;
+		}
+		input.submit{
+			width: 320px;
 		}
 
 		.grid li{
