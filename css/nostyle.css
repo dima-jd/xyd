@@ -398,6 +398,13 @@ a:hover {
 		transform: rotate(180deg) translateX(-1px);
 	}
 
+	.icon--xyd{
+		margin-left: 3em;
+		pointer-events: none;
+		width: 28px;
+		height: 23px;
+	}
+
 	.icon--nav {
 		pointer-events: none;
 		width: 8px;
@@ -665,10 +672,9 @@ a:hover {
 	}
 
 	.content{
-		.content {
-		height: 100vh;
+		height: 100%;
 		justify-content: center;
-	}
+	
 	}
 /* ____________________________________ */
 /* ____________________________________ */
@@ -818,7 +824,124 @@ a:hover {
 		overflow: hidden;
 	}
 
+	.xyd-us{
+  position:relative;
+  width:100%;
+  background: url(../img/heros-a.gif) no-repeat ;
+  background-size: cover;
+  z-index:1000;
+  cursor: none;
+}
+.xyd-us .overlay{
+	width: 100%;
+	height: 100%;
+	color: #232323;
+	opacity: 60%;
+}
+
+.xyd-us .content{
+  position:relative;
+  width:900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+.xyd-us h1{
+  font-size:34px;
+  color:var(--color-text);
+  text-align:center;
+  margin-top:120px;
+  letter-spacing:6px;
+  font-weight:bold;
+  text-transform:uppercase;
+  line-height:1.2;
+
+}
+
+.xyd-us hr{
+  color: black;
+  margin-top:30px;
+  background-color: black;
+  height: 1px;
+  width:106px;
+  border:0;
+
+}
+
+.xyd-us p.title{
+  color: white;
+  margin:40px auto;
+  width:300px;
+  line-height:26px;
+  letter-spacing:0;
+  font-size:14px;
+  font-weight:300;
+  text-align:center;
+}
+
 	/*Form*/
+
+	form input[type="text"],
+    form input[type="email"],
+    form input[type="tel"],
+    form textarea,
+    form select {
+        display: block;
+        padding: 12px 15px;
+        line-height: 1.5;
+        width: 45%;
+        font-size: 16px;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        background-clip: padding-box;
+        background-color: #fff;
+        box-shadow: 0 1px 0 0 rgba(255, 255, 255, .05), inset 0 1px 2px 0 rgba(0, 0, 0, .05);
+    }
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form input[type="tel"]:focus,
+    form textarea:focus,
+    form select:focus{
+		outline: none;
+    }
+    
+
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form-group:nth-child(1)  input {
+          
+                width: 95%;
+            }
+        
+
+    .col-6 {
+        position: relative;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .pt-3 {
+        padding-top: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .form-group label {
+            line-height: 1.7;
+            letter-spacing: .3px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 900;
+        }
+    .form-group textarea{
+    	min-height: 110px;
+            resize: vertical;
+    }
 
 	.btnform{
 		border: none;
@@ -1132,7 +1255,7 @@ a:hover {
 .contact{
   position:relative;
   width:100%;
-  background:white;
+  background-color: var(--color-bg);
   z-index:1000;
   overflow:hidden;
   margin-bottom: 150px;  
@@ -1174,7 +1297,7 @@ a:hover {
 }
 
 .contact .content .form .column{
-  width:180px;
+  width:275px;
   overflow:hidden;
   height:auto;
   float:left;
@@ -1548,7 +1671,7 @@ input.submit{
 		position: absolute;
 		right: 0;
 
-  		background-color: var(--color-bg);
+  		
 	}
 
 	.dropdown-content a {
@@ -1803,7 +1926,7 @@ input.submit{
 		font-size: 0.85em;
 	}
 	.menu {
-		font-size: 1em;
+		font-size: 0.5em;
 		position: relative;
 		width: 94%;
 		left: 5vw;
@@ -1811,7 +1934,7 @@ input.submit{
 	}
 
 	.menu-inner {
-		font-size: 1em;
+		font-size: 1.2em;
 		position: relative;
 		width: 94%;
 		padding: 0 5em;
@@ -1852,9 +1975,7 @@ input.submit{
 	br{
 		visibility: hidden;
 	}
-	.cursor {
-        visibility: visible;
-    }
+	
     .contact-form{
     	background-color: var(--color-bg);
     	width: 75%;
@@ -1960,6 +2081,6 @@ input.submit{
 		display: none;
 		}
 	.menu__item {
-		font-size: 1.5em;
+		font-size: 0.67em;
 	}
 }	
