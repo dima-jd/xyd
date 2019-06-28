@@ -827,13 +827,13 @@ a:hover {
 		top: 5vh;
 	}
 	.content__bottom {
-		width: 94%;
+		width: 100vw;
 		font-size: 0.85em;
 	}
 	.menu {
 		font-size: .88em;
 		position: relative;
-		width: 94%;
+		width: 100vw;
 		left: 5vw;
 		overflow: hidden;
 	}
@@ -841,13 +841,13 @@ a:hover {
 	.menu-inner {
 		font-size: 1.2em;
 		position: relative;
-		width: 94%;
+		width: 100vw;
 		padding: 5em 5em;
 		overflow: hidden;
 	}
 
 	.content__bottom{
-		width: 94%;
+		width: 100vw;
 		position: relative;
     bottom: 2vh;
     padding-left: 5vh;
