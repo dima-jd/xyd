@@ -770,23 +770,7 @@ a:hover {
 /** Inner Page **/
 /* ____________________________________ */
 
-.content__top {
 
-		font-size: 0.5em;
-		position: fixed;
-		right: 50vw;
-		top: 5vh;
-	}
-	
-	.menu {
-		padding-top: 10vh;
-		padding-right: 5vw;
-		padding-left: 10vw;
-	}
-	.content__bottom{
-	width: 94%;
-	padding-left: 10vw;
-	}
 	
 
 	
