@@ -803,6 +803,10 @@ a:hover {
 		width: 100vw;
 		height: 100vh;
 	}
+	.content{
+		margin-right: 5em;
+		margin-top: 5em;
+	}
 	.content__top {
 
 		font-size: 0.5em;
